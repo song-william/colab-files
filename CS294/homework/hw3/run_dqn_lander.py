@@ -11,12 +11,18 @@ import dqn
 from dqn_utils import *
 print("location of gym:", gym.__file__)
 
+parser = argparse.ArgumentParser()
+parser.add_argument('--layers', type=int, default=2)
+args = parser.parse_args()
+HIDDEN_LAYERS = args.layers
+
+
 def lander_model(obs, num_actions, scope, reuse=False):
     with tf.variable_scope(scope, reuse=reuse):
         out = obs
         with tf.variable_scope("action_value"):
-            out = layers.fully_connected(out, num_outputs=64, activation_fn=tf.nn.relu)
-            out = layers.fully_connected(out, num_outputs=64, activation_fn=tf.nn.relu)
+            for _ in range(HIDDEN_LAYERS):
+                out = layers.fully_connected(out, num_outputs=64, activation_fn=tf.nn.relu)
             out = layers.fully_connected(out, num_outputs=num_actions, activation_fn=None)
 
         return out
@@ -56,6 +62,7 @@ def lander_kwargs():
         'target_update_freq': 3000,
         'grad_norm_clipping': 10,
         'lander': True
+
     }
 
 def lander_learn(env,
@@ -67,12 +74,14 @@ def lander_learn(env,
     stopping_criterion = lander_stopping_criterion(num_timesteps)
     exploration_schedule = lander_exploration_schedule(num_timesteps)
 
+    rew_file = "lander-layers-" + str(HIDDEN_LAYERS) + '.pkl'
     dqn.learn(
         env=env,
         session=session,
         exploration=lander_exploration_schedule(num_timesteps),
         stopping_criterion=lander_stopping_criterion(num_timesteps),
         double_q=True,
+        rew_file=rew_file,
         **lander_kwargs()
     )
     env.close()

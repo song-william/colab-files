@@ -350,6 +350,7 @@ class QLearner(object):
 
       with open(self.rew_file, 'wb') as f:
         pickle.dump(episode_rewards, f, pickle.HIGHEST_PROTOCOL)
+        print(self.rew_file)
 
 def learn(*args, **kwargs):
   alg = QLearner(*args, **kwargs)
