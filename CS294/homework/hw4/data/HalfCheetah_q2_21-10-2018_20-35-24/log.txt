@@ -1,0 +1,31 @@
+10-21 20:35:24 HalfCheetah_q2_21-10-2018_20-35-24 INFO     Gathering random dataset
+10-21 20:35:24 HalfCheetah_q2_21-10-2018_20-35-24 INFO     Creating policy
+10-21 20:35:30 HalfCheetah_q2_21-10-2018_20-35-24 INFO     Random policy
+10-21 20:35:30 HalfCheetah_q2_21-10-2018_20-35-24 INFO     ---------  ---------
+10-21 20:35:30 HalfCheetah_q2_21-10-2018_20-35-24 INFO     ReturnAvg  -155.213
+10-21 20:35:30 HalfCheetah_q2_21-10-2018_20-35-24 INFO     ReturnMax  -107.644
+10-21 20:35:30 HalfCheetah_q2_21-10-2018_20-35-24 INFO     ReturnMin  -205.29
+10-21 20:35:30 HalfCheetah_q2_21-10-2018_20-35-24 INFO     ReturnStd    29.4938
+10-21 20:35:30 HalfCheetah_q2_21-10-2018_20-35-24 INFO     ---------  ---------
+10-21 20:35:30 HalfCheetah_q2_21-10-2018_20-35-24 DEBUG    
+10-21 20:35:30 HalfCheetah_q2_21-10-2018_20-35-24 DEBUG    : total      0.0 (100.0%)
+10-21 20:35:30 HalfCheetah_q2_21-10-2018_20-35-24 DEBUG    : other      0.0 (100.0%)
+10-21 20:35:30 HalfCheetah_q2_21-10-2018_20-35-24 DEBUG    
+10-21 20:35:30 HalfCheetah_q2_21-10-2018_20-35-24 INFO     Training policy....
+10-21 20:35:32 HalfCheetah_q2_21-10-2018_20-35-24 INFO     Evaluating policy...
+10-21 20:44:16 HalfCheetah_q2_21-10-2018_20-35-24 INFO     Trained policy
+10-21 20:44:16 HalfCheetah_q2_21-10-2018_20-35-24 INFO     -----------------  --------
+10-21 20:44:16 HalfCheetah_q2_21-10-2018_20-35-24 INFO     ReturnAvg           52.7904
+10-21 20:44:16 HalfCheetah_q2_21-10-2018_20-35-24 INFO     ReturnMax           99.58
+10-21 20:44:16 HalfCheetah_q2_21-10-2018_20-35-24 INFO     ReturnMin          -51.0097
+10-21 20:44:16 HalfCheetah_q2_21-10-2018_20-35-24 INFO     ReturnStd           41.4276
+10-21 20:44:16 HalfCheetah_q2_21-10-2018_20-35-24 INFO     TrainingLossFinal
+10-21 20:44:16 HalfCheetah_q2_21-10-2018_20-35-24 INFO     TrainingLossStart
+10-21 20:44:16 HalfCheetah_q2_21-10-2018_20-35-24 INFO     -----------------  --------
+10-21 20:44:16 HalfCheetah_q2_21-10-2018_20-35-24 DEBUG    
+10-21 20:44:16 HalfCheetah_q2_21-10-2018_20-35-24 DEBUG    : total      526.5 (100.0%)
+10-21 20:44:16 HalfCheetah_q2_21-10-2018_20-35-24 DEBUG    : get action 523.6 (99.4%)
+10-21 20:44:16 HalfCheetah_q2_21-10-2018_20-35-24 DEBUG    : train policy 2.1 (0.4%)
+10-21 20:44:16 HalfCheetah_q2_21-10-2018_20-35-24 DEBUG    : env step   0.6 (0.1%)
+10-21 20:44:16 HalfCheetah_q2_21-10-2018_20-35-24 DEBUG    : other      0.2 (0.0%)
+10-21 20:44:16 HalfCheetah_q2_21-10-2018_20-35-24 DEBUG    
