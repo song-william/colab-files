@@ -132,7 +132,6 @@ class ModelBasedPolicy(object):
         ### PROBLEM 2
         ### YOUR CODE HERE
         shape = [self._num_random_action_selection, self._horizon, self._action_dim]
-        print("shape", shape)
         sampled_actions = tf.random_uniform(shape, minval=self._action_space_low, maxval=self._action_space_high)
         next_states, states = [], []
 
